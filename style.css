@@ -51,7 +51,7 @@ body{
   height: 245px;
   margin-bottom: 30px;
 }
-.product-card__for-normal-skin {
+.product-card__for-skin {
   margin-bottom: 5px;
   font-weight: 400;
   height: 24px;
@@ -59,7 +59,7 @@ body{
   text-transform: uppercase;
   color: #A5A3B9;
 }
-.product-card__title {
+.product-card__name {
   height: 27px;
   margin-bottom: 5px;
   font-weight: 700;
