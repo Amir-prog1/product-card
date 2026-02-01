@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #515076;
+  font-family:Montserrat,sans-serif
+}
+
+body {
+  justify-content: center;
+  margin: 0 auto;
+  width: 1280px;
+  box-sizing: border-box;
+}
+
+.bg-dandelions {
+  background: url("/images/bg-dandelions.png");
+  background-repeat: no-repeat;
+  width: 790px;
+  height: 697px;
+  margin-top: 0px;
+  margin-left: 85px;
+  position: absolute;
+  justify-content: center;
+}
+
+.title {
+  width: 846px;
+  height: 78px;
+  font-size: 70px;
+  font-weight:400;
+  text-align: center;
+  margin: 220px 110px 110px;
+  justify-content: center;
+  color: #515076;
+}
+
+.product-card-wrapper {
+  display: flex;
+  width: 1110px;
+  gap: 45px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.product-card {
+  box-sizing: border-box;
+  width: 340px;
+  min-height: 573px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card__img {
+  width: 290px;
+  height: 245px;
+  margin-bottom: 30px;
+}
+
+.product-card__for-skin {
+  margin-bottom: 5px;
+  font-weight: 400;
+  height: 24px;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #A5A3B9;
+}
+
+.product-card__name {
+  height: 27px;
+  margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.product-card__description {
+  height: 36px;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.product-card__all-compound {
+  width: 252px;
+  height: 87px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+.product-card__compound {
+  min-height: 18px;
+  width: 49px;
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.item {
+  min-width: 18px;
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 5px;
+  list-style: circle;
+  list-style-position: inside;
+}
+
+.product-card-wrapper__price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product-card__text {
+  height: 24px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-card__price {
+  height: 24px;
+  font-size: 20px;
+}
