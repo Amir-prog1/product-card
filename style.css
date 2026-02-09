@@ -34,6 +34,20 @@ body {
   color: #515076;
 }
 
+.buttons {
+  position: absolute;
+  top: 10px;
+  left: 0;
+}
+
+.bg__orange {
+  background-color: #ff9900;
+}
+
+.bg__yellow {
+  background-color: #fbff00;
+}
+
 .product-card-wrapper {
   display: flex;
   width: 1110px;
