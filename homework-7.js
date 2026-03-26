@@ -3,8 +3,8 @@ import { socialMediaComments } from './comments.js';
 //Уровент 1:
 //2. Создать массив чисел от 1 до 10. Отфильтровать его таким образом, что бы мы получил массив чисел, начиная с 5.
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const newArray = numbers.filter(num => num >=5);
+const filteredNumbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+const newArray = filteredNumbers.filter(num => num >=5);
 console.log(newArray);
 
 //3. Создать массив строк, относящихся к любой сущности (название фильмов/книг, кухонные приборы, мебель и т.д.), проверить, есть ли в массиве какая-то определенная сущность.
@@ -24,8 +24,8 @@ reverseArray(furniture);
 //Уровень 2:
 //7. Вывести в консоль массив тех комментариев, почта пользователей которых содержит ".com"
 
-const filteredComments = socialMediaComments.filter(comment => comment.email.includes(".com"));
-console.log(filteredComments);
+const filteredCommentsByComEmails = socialMediaComments.filter(comment => comment.email.includes(".com"));
+console.log(filteredCommentsByComEmails);
 
 //8. Перебрать массив таким образом, что бы пользователи с id меньше или равно 5 имели postId: 2, а те, у кого id больше 5, имели postId: 1
 
@@ -54,16 +54,16 @@ console.log(validatedComments);
 //Уровень 3:
 //11. Почитать про метод массива reduce. Используя его, вывести массив почт и провернуть тоже самое с помощью метода map
 
-const emailListReduce = socialMediaComments.reduce((acc, comment) => {
+const emailListByReduce = socialMediaComments.reduce((acc, comment) => {
   acc.push(comment.email);
   return acc;
 }, []);
-console.log(emailListReduce);
+console.log(emailListByReduce);
 
-const emailListMap = socialMediaComments.map(comment => comment.email);
-console.log(emailListMap);
+const emailListByMap = socialMediaComments.map(comment => comment.email);
+console.log(emailListByMap);
 
 //12. Почитать про методы toString(), join() и перебрав массив с задания №11, привести его к строке.
 
-const emailString = emailListMap.toString();
-const emailStringWithJoin = emailListMap.join(", ");
+const emailToString = emailListByMap.toString();
+const emailStringByJoin = emailListByMap.join(", ");
