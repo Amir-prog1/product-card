@@ -4,8 +4,8 @@ import { socialMediaComments } from './comments.js';
 //2. Создать массив чисел от 1 до 10. Отфильтровать его таким образом, что бы мы получил массив чисел, начиная с 5.
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-const newArray = filteredNumbers.filter(num => num >=5);
-console.log(newArray);
+const filteredNumbers = numbers.filter(num => num >=5);
+console.log(filteredNumbers);
 
 //3. Создать массив строк, относящихся к любой сущности (название фильмов/книг, кухонные приборы, мебель и т.д.), проверить, есть ли в массиве какая-то определенная сущность.
 
