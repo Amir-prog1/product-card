@@ -5,7 +5,7 @@
   font-family:Montserrat,sans-serif
 }
 
-body {
+.body {
   justify-content: center;
   margin: 0 auto;
   width: 1280px;
@@ -48,7 +48,7 @@ body {
   background-color: #fbff00;
 }
 
-.product-card-wrapper {
+.product-card__wrapper {
   display: flex;
   width: 1110px;
   gap: 45px;
