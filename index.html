@@ -10,16 +10,18 @@
   <title>Document</title>
 </head>
 <body class="body">
-  <div class="all-elements bg-dandelions">
+  <div class="all-elements">
+    <img src="./images/bg-dandelions.png" class="bg-dandelions">
     <h1 class="title">Выбери свой продукт</h1>
     <div class="buttons">
       <button id="recolor-first-card-button">Перекрась фон первой карточки</button>
       <button id="recolor-all-card-button">Перекрась фон всех карточек</button>
       <button id="open-google-button">Открыть Google</button>
       <button id="recolor-button" class="bg__orange">Перекрась меня!</button>
+      <button id="open-modal-button">Регистрация</button>
     </div>
     <div class="product-card__wrapper">
-      <template class="product-card__template">
+    <template class="product-card__template">
       <div class="product-card">
         <img src="" class="product-card__image">
         <p class="product-card__skin-type">для нормальной кожи</p>
@@ -34,13 +36,92 @@
         <span class="product-card__price"></span>
         </div>
       </div>
-      </template>
+    </template>
     </div>
-  </div>
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-left">
+        <h2>Product Cards</h2>
+        <p>У нас самые лучшие продукты для кожи!</p>
+          <div class="footer__socials">
+            <ul class="footer__social-networks">
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                  <img src="./images/tg-icon.svg" alt="Мы в Telegram" class="footer__social-icon">
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a href="#" class="footer__social-link" target="_blank" rel="noopener noreferrer">
+                  <img src="./images/vk-icon.svg" alt="Мы в VK" class="footer__social-icon">
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-center">
+          <h3>Подпишись на наши акции:</h3>
+          <form class="subscribe-form">
+            <input type="email" class="footer__form-input" id="email" name="email" placeholder="Введи Email..." required autocomplete="email">
+            <button class="footer__form-button" type="submit">Подписаться</button>
+          </form>
+        </div>
+        <div class="footer-right">
+          <nav class="footer__menu">
+            <p class="footer__menu-title">Быстрые ссылки</p>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item"><a href="#">Главная</a></li>
+              <li class="footer__menu-item"><a href="#">Магазин</a></li>
+              <li class="footer__menu-item"><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="footer__link-site">
+        <img src="./images/footer-line.svg" alt="line">
+        <p class="footer__address">www.product-cards.com©all right reserve</p>
+      </div>
+    </footer>
+    </div>
+    <div class="overlay modal">
+      <div class="modal-window">
+        <button class="close-modal-button">×</button>
+        <h2>Регистрация</h2>
+        <form class="registration-form" id="registration-form">
+          <label for="first-name">
+            Имя
+          </label>
+          <input type="text" id="first-name" placeholder="Введите имя" required minlength="2">
+          <label for="last-name">
+            Фамилия
+          </label>
+          <input type="text" id="last-name" placeholder="Введите фамилию" required minlength="2">
+          <label for="birth-date">
+            Дата рождения
+          </label>
+          <input type="date" id="birth-date" required>
+          <label for="login">
+            Логин
+          </label>
+          <input type="text" id="login" placeholder="Введите логин" required minlength="6">
+          <label for="password">
+            Пароль
+          </label>
+          <input type="password" id="password" placeholder="Введите пароль" required minlength="6">
+          <label for="repeat-password">
+            Повторите пароль
+          </label>
+          <input type="password" id="repeat-password" placeholder="Повторите пароль" required minlength="6">
+          <button type="submit">
+            Зарегистрироваться
+          </button>
+        </form>
+      </div>
+    </div>
   <script src="./script.js"></script>
   <script src="./homework-5.js"></script>
   <script src="./homework-6.js"></script>
   <script src="./homework-7.js" type="module"></script>
   <script src="./homework-8.js" type="module"></script>
+  <script src="./homework-9.js"></script>
 </body>
 </html>
