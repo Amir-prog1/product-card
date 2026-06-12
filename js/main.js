@@ -11,7 +11,7 @@ import "./furniture.js"
 // Modal
 
 const modal = new Modal(".modal");
-const form = new Form("registration-form");
+const form = new Form("#registration-form");
 
 const openModalButton = document.getElementById("open-modal-button");
 openModalButton.addEventListener("click", () => {
@@ -48,18 +48,19 @@ form.form.addEventListener("submit", (event) => {
 
 // Subscribe
 
-const subscribeForm = document.querySelector(".subscribe-form");
-const emailInput = document.getElementById("email");
+const subscribeForm = new Form(".subscribe-form");
 
-subscribeForm.addEventListener("submit", (e) => {
+subscribeForm.form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  if (!emailInput.value || !emailInput.checkValidity()) {
-    alert("Введите корректный email");
+  if (!subscribeForm.isValid()) {
+    subscribeForm.form.reportValidity();
     return;
   }
 
-  console.log({ email: emailInput.value });
+  const values = subscribeForm.getValues();
+
+  console.log(values);
 
   subscribeForm.reset();
 });
