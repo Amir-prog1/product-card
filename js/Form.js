@@ -1,6 +1,6 @@
 export default class Form {
-  constructor(formId) {
-    this.form = document.getElementById(formId);
+  constructor(formSelector) {
+    this.form = document.querySelector(formSelector);
   }
   
   // Метод для получения всех значений формы
