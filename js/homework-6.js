@@ -111,4 +111,4 @@ function getRarityProperty(animals) {
     };
   });
 }
-const updatedAnimals = getRarityProperty(allAnimals);
+const updatedAnimals = getRarityProperty(ridingAnimals);
